@@ -16,5 +16,9 @@ public class Chap2Program3 {
 		exampleWindow.setSize(3000,2000);
 		exampleWindow.setTitle(name);
 		exampleWindow.setVisible(true);
+		
+		// 새로 생성해도 문제 X 개별적으로 작동
+		exampleWindow = new JFrame();
+		exampleWindow.setVisible(true);
 	}
 }
