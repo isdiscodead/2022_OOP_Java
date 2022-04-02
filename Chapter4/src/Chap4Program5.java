@@ -2,7 +2,6 @@ import java.util.Date;
 
 /*
  * measure execution time by Date class
- * 
  * */
 
 public class Chap4Program5 {
@@ -17,7 +16,6 @@ public class Chap4Program5 {
 		for ( int i=0 ; i<=REPEAT; i++ ) {
 			for ( int j=0 ; j<=REPEAT ; j++ ) {
 				for ( int k=0 ; k<=REPEAT ; k++ ) {
-					
 				}
 			}
 		}
