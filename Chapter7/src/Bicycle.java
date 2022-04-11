@@ -1,14 +1,18 @@
 
 public class Bicycle {
-	// bicycle의 속성 값 -> 데이터 멤버 -> getter/setter 
-	private String ownerName = "";
+	// bicycle의 속성 값 -> data members -> getter/setter 
+	private String ownerName; // 여기서는 선언만 
 	
-	// 생성자 ( Constructor )
+	// 생성자 ( Constructor ) -> 보통 매개변수를 달리해 다형성 있게 구현함 
 	public Bicycle() {
-		ownerName = "unknown";
-		System.out.println("new Bike");
+		ownerName = "unknown"; // datamember initialize
 	}
 	
+	// 생성자는 리턴 타입 X 
+	public Bicycle(String ownerName) {
+		this.ownerName = ownerName; // datamember initialize
+		System.out.println("new Bike");
+	}
 	
 	// setter -> main 등 에서 값을 받아와서 객체가 생성됐을 때 멤버변수의 값을 지정해주는 function 
 	public void setOwnerName(String name) {
