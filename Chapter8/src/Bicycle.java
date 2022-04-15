@@ -5,7 +5,9 @@ public class Bicycle {
 	
 	// 생성자 ( Constructor ) -> 보통 매개변수를 달리해 다형성 있게 구현함 
 	public Bicycle() {
-		ownerName = "unknown"; // datamember initialize
+		// this()는 항상 생성자의 맨 윗부분에 존재
+		this("unknown"); // 생성자 호출, 잘 쓰이진 X 
+		// ownerName = "unknown"; // datamember initialize
 	}
 	
 	// 생성자는 리턴 타입 X 
