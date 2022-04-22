@@ -16,6 +16,7 @@ public class Chap6Program7 {
 				n = scanner.nextInt();
 			} catch ( NumberFormatException e ) {
 				System.out.println("Please input in integer format");
+				scanner.next(); // clear the buffer 
 				i--; // 재실행을 위해 i--하여 이전으로 
 				continue; // 루프 재진행 
 			}

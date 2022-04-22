@@ -38,9 +38,10 @@ public class Bicycle {
 		System.out.println("new Bike");
 	}
 	
+	
 	/**
-	 * Returns the name of this bicycle's owner
-	 * @return ownerName;
+	 * Assigns the name of this bicycle's owner
+	 * @param name set the owner's name into data member
 	 */
 	// setter -> main 등 에서 값을 받아와서 객체가 생성됐을 때 멤버변수의 값을 지정해주는 function 
 	public void setOwnerName(String name) {
@@ -50,9 +51,9 @@ public class Bicycle {
 	}
 	
 	/**
-	 * Assigns the name of this bicycle's owner
-	 * @param name set the owner's name into data member
-	 */
+	 * Returns the name of this bicycle's owner
+	 * @return ownerName;
+	 */	
 	// getter -> 클래스 내의 private 멤버 변수의 값을 밖에서도 확인할 수 있도록 반환해주는 function 
 	public String getOwnerName() {
 		return this.ownerName;

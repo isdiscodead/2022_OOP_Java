@@ -17,6 +17,7 @@ public class Chap9Program2 {
 	
 	// list 사용 방법 
 	private List books;
+	
 	public Chap9Program2() {
 		books = new LinkedList();
 	}
