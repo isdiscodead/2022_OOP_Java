@@ -29,4 +29,8 @@
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="WidowWeaponSniper"/>
+    <fullyQualifiedTypeName name="DoomfistWeapon"/>
+    <fullyQualifiedTypeName name="Chap11Program5"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 </qualifiedTypeNameHistroy>
