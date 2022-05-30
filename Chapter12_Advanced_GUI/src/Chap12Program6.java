@@ -10,8 +10,10 @@ import javax.swing.JLabel;
 
 public class Chap12Program6 extends JFrame {
 	
-	private final int FLYING_UNIT = 10;
-	private JLabel la = new JLabel("HELLO");
+	// public static은 nested class 사용 X지만 보안이 낮아 사용 X
+	// 변경될 일이 없고, 변경되어도 괜찮은 경우에만 사용 ... 
+	public static final int FLYING_UNIT = 10;
+	public static JLabel la = new JLabel("HELLO");
 
 	public Chap12Program6() {
 		setTitle("Example of Key event");
@@ -21,7 +23,7 @@ public class Chap12Program6 extends JFrame {
 		Container c = getContentPane();
 		c.setLayout(null);
 		
-		c.addKeyListener(new KeyboardListenerInClass() );
+		c.addKeyListener(new KeyboardListener() );
 		
 		la.setLocation(50, 50);
 		la.setSize(100, 20);
@@ -48,32 +50,5 @@ public class Chap12Program6 extends JFrame {
 
 	}
 	
-	
-	public class KeyboardListenerInClass extends KeyAdapter {
-		public void keyPressed(KeyEvent e) {
-			int keyCode = e.getKeyCode();
-			
-			switch (keyCode) {
-			
-			case KeyEvent.VK_UP:
-				// position의 경우 왼쪽 위가 0, 0임 
-				// 그러므로 위로 올리려면 -로 연산 
-				la.setLocation(la.getX(), la.getY()-FLYING_UNIT);
-				break;
-				
-			case KeyEvent.VK_DOWN:
-				la.setLocation(la.getX(), la.getY()+FLYING_UNIT);
-				break;
-				
-			case KeyEvent.VK_LEFT:
-				la.setLocation(la.getX()-FLYING_UNIT, la.getY());
-				break;
-				
-			case KeyEvent.VK_RIGHT:
-				la.setLocation(la.getX()+FLYING_UNIT, la.getY());
-				break;
-			}
-		}
-	}
 
 }

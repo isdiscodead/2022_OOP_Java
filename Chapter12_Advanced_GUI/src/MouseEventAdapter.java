@@ -15,5 +15,7 @@ public class MouseEventAdapter extends MouseAdapter {
 	
 		// 다른 클래스에서 접근하여 변경할 수 없음 ... 
 		// simpleLabel.setLocation(x, y);
+		
+		// -> Nested Class 사용 
 	}
 }
